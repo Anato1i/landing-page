@@ -5,7 +5,18 @@
 
 .logo {
   text-align: left;
-  padding: 30px;
+  padding: 10px;
+}
+
+.logo__text {
+  font-size: 70px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  background-image: linear-gradient(45deg, #ff3333, #ffda33, #33a3ff, #336dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .logo__img {
@@ -14,13 +25,19 @@
   border-radius: 50%;
   transform: scale(-1, 1);
   box-shadow: 0px 10px 10px 2px rgb(105, 105, 105);
+  transition: transform 0.3s;
+}
+
+.logo__img:hover {
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
 .header__top-inner {
   background-color: #ededff;
   display: flex;
   flex-direction: column-reverse;
-  padding: 10px 20px;
+  padding: 3px 20px 60px 20px;
 }
 
 .menu {
@@ -30,10 +47,8 @@
 .menu__list {
   padding: 20px;
   list-style: none;
-  border-style: solid;
   border-width: 0px;
-  /* border-color: rgb(253, 253, 253); */
-  box-shadow: 0 10px  20px black;
+  box-shadow: 0 10px 20px black;
 }
 
 .menu__list-item {
@@ -41,12 +56,22 @@
 }
 
 .menu__link {
-  font-size: 25px;
-  color: #464646;
+  font-size: 16px;
+  color: #303030;
   text-decoration: none;
-  margin: 20px;
+  margin-right: 5%;
+}
+
+.menu__link--active {
+  font-size: 23px;
+  color: #0000008c;
+  font-weight: bold;
 }
 
 .header__content-img {
   width: 100%;
+}
+
+.header__content-title {
+  background-color: aqua;
 }
