@@ -11,7 +11,7 @@
 .logo__text {
   font-size: 70px;
   text-align: center;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   background-image: linear-gradient(45deg, #ff3333, #ffda33, #33a3ff, #336dff);
   -webkit-background-clip: text;
@@ -74,4 +74,23 @@
 
 .header__content-title {
   background-color: aqua;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
+.image-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img {
+  max-width: 100%;
+}
+
+.image-slider .swiper-button-next::after,
+.image-slider .swiper-button-prev::after {
+  color: aliceblue;
+  font-size: 60px;
 }
