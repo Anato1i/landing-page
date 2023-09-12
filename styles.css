@@ -66,16 +66,16 @@
 }
 
 .menu__link {
-  font-size: 16px;
+  font-size: 19px;
   color: #303030;
   text-decoration: none;
   padding: 5px;
 }
 
 .menu__link--active {
-  font-size: 23px;
-  color: #0000008c;
+  font-size: 39px;
   font-weight: bold;
+  color: red;
 }
 
 .header__content-img {
@@ -88,7 +88,7 @@
 
 .header__content-title {
   text-align: center;
-  
+
   background-color: rgb(255, 161, 161);
 }
 
@@ -123,10 +123,4 @@
 
 .blog__title {
   height: 200px;
-}
-
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 320px;
-  }
 }
