@@ -124,3 +124,9 @@
 .blog__title {
   height: 200px;
 }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 320px;
+  }
+}
