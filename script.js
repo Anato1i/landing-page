@@ -32,7 +32,7 @@ new Swiper('.image-slider', {
 
   spaceBetween: 40,
 
-  slidesPerView: 1.2,
+  slidesPerView: 3.5,
 })
 
 
@@ -60,3 +60,39 @@ const colorfulText = text.split('').map(letter => {
 
 // Заменяем содержимое элемента на окрашенный текст
 textElement.innerHTML = colorfulText;
+
+
+
+
+// Функция для отображения увеличенного изображения
+function showZoomedImage(imageSrc) {
+  const zoomedContainer = document.getElementById('zoomed-image-container');
+  const zoomedImage = document.getElementById('zoomed-image');
+
+  zoomedContainer.style.display = 'block';
+  zoomedImage.src = imageSrc;
+}
+
+// Функция для закрытия увеличенного изображения
+function closeZoomedImage() {
+  const zoomedContainer = document.getElementById('zoomed-image-container');
+  zoomedContainer.style.display = 'none';
+}
+
+// Найти все изображения с классом "zoomable"
+const zoomableImages = document.querySelectorAll('.zoomable');
+
+// Добавить обработчик события на каждое изображение
+zoomableImages.forEach((image) => {
+  image.addEventListener('click', () => {
+    const imageSrc = image.src;
+    showZoomedImage(imageSrc);
+  });
+});
+
+// Добавить обработчик события для закрытия увеличенного изображения
+const closeZoomedButton = document.getElementById('close-zoomed-image');
+closeZoomedButton.addEventListener('click', () => {
+  closeZoomedImage();
+});
+
