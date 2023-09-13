@@ -3,11 +3,17 @@
   padding: 0;
 }
 
+
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.header__top {
+  width: 100%;
 }
 
 .logo {
@@ -21,6 +27,12 @@
 }
 .logo__text::first-letter {
   color: red;
+}
+
+@media (max-width: 700px) {
+  .logo__text{
+    font-size: 40px;
+  }
 }
 
 .logo__img {
@@ -107,7 +119,7 @@
 }
 
 .image-slider__image img {
-  max-width: 90%;
+  max-width: 100%;
   object-fit: cover;
   box-shadow: 14px 14px 8px rgb(107, 107, 107);
 }
