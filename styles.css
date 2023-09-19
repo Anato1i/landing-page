@@ -88,6 +88,10 @@
   color: red;
 }
 
+.header__content{
+  width: 100%;
+}
+
 .header__content-img {
   width: 100%;
 }
