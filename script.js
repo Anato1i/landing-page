@@ -62,6 +62,20 @@ const colorfulText = text
 // Заменяем содержимое элемента на окрашенный текст
 textElement.innerHTML = colorfulText
 
+// Функция для изменения цвета букв
+function changeLetterColors() {
+  const letters = textElement.querySelectorAll('span');
+  letters.forEach((letter) => {
+    letter.style.color = getRandomColor();
+  });
+}
+
+// Вызываем функцию изменения цвета букв каждые 2 секунды
+setInterval(changeLetterColors, 1000);
+
+
+
+
 // Функция для отображения увеличенного изображения
 function showZoomedImage(imageSrc) {
   const zoomedContainer = document.getElementById('zoomed-image-container')
