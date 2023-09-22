@@ -186,8 +186,8 @@
   border-radius: 50%;
   box-sizing: border-box;
   background: #fff;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +208,13 @@
   0 0 25px var(--color),
   0 0 50px var(--color),
   0 0 200px var(--color);
+}
+@media (max-width: 400px) {
+  .social__button-link {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8em;
+  }
 }
 
 
