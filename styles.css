@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 .container {
   width: 100%;
@@ -167,10 +168,54 @@
   font-size: 60px;
 } */
 
+
+
+.social__section {
+  width: 100%;
+}
+
+.social__button{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: #1d1d1d;
+}
+.social__button-link {
+  margin: 0 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+  background: rgba(0,0,0,0);
+  color: var(--color);
+  font-size: 2.5em;
+  -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
+
+}
+
+.social__button-link:hover{
+  background: var(--color);
+  color: #fbfcfa;
+  box-shadow: 
+  0 0 5px var(--color),
+  0 0 25px var(--color),
+  0 0 50px var(--color),
+  0 0 200px var(--color);
+}
+
+
 .footer__data {
   width: 100%;
   height: 150px;
-  margin-top: 50px;
+  margin-top: 5px;
   background-color: rgb(73, 73, 73);
   display: flex;
   flex-wrap: wrap;
